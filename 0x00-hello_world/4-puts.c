@@ -1,4 +1,4 @@
-#include stdio.h
+#include <stdio.h>
 /**
  * main - C program that prints a one line output
  * Return: 0
