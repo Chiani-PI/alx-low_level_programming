@@ -1,49 +1,27 @@
 #include "main.h"
+
 /**
- * print_times_table - A function that prints the n times table,
- * starting with 0
- * @n: times table number
+ * print_times_table - Function prints the n times table starting from 0
+ * @n: integer to print times table up to
+ * Return: void
  */
 void print_times_table(int n)
 {
-int a, b, c;
-if (n >= 0 && n <= 15)
-{
-for (a = 0; a <= n; a++)
-{
-for (b = 0; b <= n; b++)
-{
-c = b * a;
-if (b == 0)
-{
-_putchar(c + '0');
-}
-else if (c < 10 && b != 0)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
-_putchar(c + '0');
-}
-else if (c >= 10 && c < 100)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar((c / 10) + '0');
-_putchar((c % 10) + '0');
-}
-else if (c >= 100)
-{
-_putchar(',');
-_putchar(' ');
-_putchar((c / 10) + '0');
-_putchar(((c / 10) % 10) + '0');
-_putchar((c % 10) + '0');
-}
-}
-_putchar('\n');
-}
-}
+	int a, b, prod;
+
+	if (n >= 0 && n <= 15)
+	{
+		for (a = 0; a <= n; a++)
+		{
+			for (b = 0; b <= n; b++)
+			{
+				res = a * b;
+				if (b == 0)
+					printf("%d", prod);
+				else
+					printf(", %d", prod);
+			}
+			printf("\n");
+		}
+	}
 }
