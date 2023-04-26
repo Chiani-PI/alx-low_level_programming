@@ -15,7 +15,7 @@ void print_times_table(int n)
 		{
 			for (b = 0; b <= n; b++)
 			{
-				res = a * b;
+				prod = a * b;
 				if (b == 0)
 					printf("%d", prod);
 				else
