@@ -15,13 +15,13 @@ void puts2(char *str)
 
 	while (*b != '\0')
 	{
-		y++;
+		b++;
 		longi++;
 	}
 
 	a = longi - 1;
 
-	for (c = 0; c <= t; c++)
+	for (c = 0; c <= a; c++)
 	{
 		if (c % 2 == 0)
 		{
