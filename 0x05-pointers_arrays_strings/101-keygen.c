@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX_LEN 100
-
 /**
  * main - program that generates random valid
  * passwords for the program 101-crackme
@@ -12,34 +10,26 @@
 
 int main(void)
 {
-	int pass[MAX_LEN];
+	int pass[100];
 	int i, sum, n;
 
-	sum = 0;
+	sum = 0;	
 
 	srand(time(NULL));
 
-	for (i = 0; i < MAX_LEN - 1; i++)
+	for (i = 0; i < 100; i++)
 	{
-		pass[i] = rand() % 78 + 48;
-		/**
-		 * Generates a random ASCII character
-		 * between '0' (48) and 'z' (122)
-		 */
-		sum += pass[i];
-
-		putchar(pass[i]);
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
 	}
-
-	/**
-	 * Calculate the last character to make the sum of all characters
-	 * equal to 2772
-	 */
-
-	n = 2772 - sum;
-	pass[MAX_LEN - 1] = n;
-
-	putchar(n);
 
 	return (0);
 }
