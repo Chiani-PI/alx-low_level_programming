@@ -38,7 +38,7 @@ int _atoi(char *s)
 		j++;
 	}
 
-	if (f == 0)
+	if (g == 0)
 		return (0);
 
 	return (m);
