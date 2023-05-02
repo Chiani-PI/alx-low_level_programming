@@ -22,15 +22,19 @@ int main(void)
 	for (i = 0; i < MAX_LEN - 1; i++)
 	{
 		pass[i] = rand() % 78 + 48;
-		// Generates a random ASCII character
-		// between '0' (48) and 'z' (122)
+		/**
+		 * Generates a random ASCII character
+		 * between '0' (48) and 'z' (122)
+		 */
 		sum += pass[i];
 
 		putchar(pass[i]);
 	}
 
-	// Calculate the last character to make the sum of all characters
-	// equal to 2772
+	/**
+	 * Calculate the last character to make the sum of all characters
+	 * equal to 2772
+	 */
 
 	n = 2772 - sum;
 	pass[MAX_LEN - 1] = n;
