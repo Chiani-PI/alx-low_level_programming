@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Program prints a[2] = 98, followed by a new line
  * Return: Always 0 (Succes)
  */
 int main(void)
@@ -11,14 +11,10 @@ int main(void)
 
 	a[2] = 1024;
 	p = &n;
-
 	/*
 	 * write your line of code here...
-	 * Remember:
-	 * - you are not allowed to use a
-	 * - you are not allowed to modify p
-	 * - only one statement
-	 * - you are not allowed to code anything else than this line of code
+	 * Remember - u aren't allowed to use a - u aren't allowed to modify p;
+	 * -only 1 statmnt -u aren't alwd 2 code anythn else thn ths ln of code
 	 */
 	*(p + 5) = 98;
 
