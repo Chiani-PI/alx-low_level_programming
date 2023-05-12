@@ -20,7 +20,6 @@ int is_prime_number(int n)
  * @a: Integer to iterate
  *
  * Return: 1 if the input integer is a prime number, otherwise return 0
-.
  */
 int true_prime(int n, int a)
 {
