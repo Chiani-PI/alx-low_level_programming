@@ -26,7 +26,7 @@ int true_prime(int n, int a)
 {
 	if (a == 1)
 		return (1);
-	if (n % a == 0 && i > 0)
+	if (n % a == 0 && a > 0)
 		return (0);
 	return (true_prime(n, a - 1));
 }
