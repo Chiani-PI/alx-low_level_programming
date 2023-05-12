@@ -23,9 +23,9 @@ int _sqrt_recursion(int n)
  */
 int true_sqrt_recursion(int n, int a)
 {
-	if (a * i > n)
+	if (a * a > n)
 		return (-1);
 	if (a * a == n)
 		return (a);
-	return (real_sqrt_recursion(n, a + 1));
+	return (true_sqrt_recursion(n, a + 1));
 }
