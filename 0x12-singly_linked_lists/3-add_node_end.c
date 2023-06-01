@@ -36,7 +36,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (tempo->next)
 		tempo = tempo->next;
 
-		tempo->next = newnode;
+	tempo->next = newnode;
 
 	return (newnode);
 }
